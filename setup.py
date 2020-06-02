@@ -1,7 +1,7 @@
 from distutils.core import setup, Extension
 vrapi = Extension('vrapi', sources=['bridge.c'])
 setup(name = 'oqvr',
-      packages = ['oqvr']
+      packages = ['oqvr'],
        version = '1.0',
        description = 'A port of the Oculus Quest SDK',
        author = 'zurgeg',
