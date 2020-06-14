@@ -1,5 +1,7 @@
 language: python
 install:
+- swig -python translate.i
+- ls
 - pip install .
 script:
 - python tests/testvr.py
