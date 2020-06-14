@@ -2,8 +2,8 @@ language: python
 install:
 - sudo apt-get install swig
 - swig -python translate.i
-- gcc -fPIC -c example.c translate_wrap.c -I/usr/local/include/python3.6
-- gcc -shared example.o translate_wrap.o -o _example.so
+- gcc -fPIC -c bridge2.c translate_wrap.c -I/usr/local/include/python3.6
+- gcc -shared bridge2.o translate_wrap.o -o _example.so
 - ls
 - pip install .
 script:
