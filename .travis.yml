@@ -1,5 +1,6 @@
 language: python
 install:
+- apt-get install swig
 - swig -python translate.i
 - ls
 - pip install .
