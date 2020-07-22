@@ -1,6 +1,6 @@
 language: python
 install:
-- sudo apt-get install python-dev
+- sudo apt-get install python3-dev
 - sudo apt-get install swig
 - swig -python translate.i
 - gcc -fPIC -c translate_wrap.c -I/usr/local/include/python3.6
