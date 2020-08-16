@@ -6,7 +6,7 @@ install:
 - swig -python translate.i
 - gcc -fPIC -c translate_wrap.c -I/home/travis/virtualenv/python3.6.7/include/python3.6m
 - gcc -shared translate_wrap.o -o _trans.so
-- ls
+- ls oqvr
 - pip install .
 script:
 - python tests/testvr.py
