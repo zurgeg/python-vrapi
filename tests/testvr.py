@@ -1,2 +1,2 @@
-import oqvr
-print(dir(oqvr))
+import translate
+print(dir(translate))
